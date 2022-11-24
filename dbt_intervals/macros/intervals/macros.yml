@@ -1,0 +1,14 @@
+version: 2
+
+macros:
+  - name: is_currently_active_record
+    description: >
+      A boolean expression that is TRUE when the row is currently active, given valid_from and
+      valid_to columns
+    arguments:
+      - name: valid_from
+        type: string
+        description: The column the earlier date in the interval
+      - name: valid_to
+        type: string
+        description: The column the later date in the interval
